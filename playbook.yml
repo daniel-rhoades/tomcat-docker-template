@@ -1,0 +1,11 @@
+#
+# Playbook to test apply the role to the localhost which is expected to be a Docker container
+#
+- hosts: localhost
+  connection: local
+  sudo: True
+  vars:
+      ansible_pkg_mgr: apt
+  roles:
+    - williamyeh.oracle-java
+    - daniel-rhoades.tomcat
