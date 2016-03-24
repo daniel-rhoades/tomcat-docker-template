@@ -18,7 +18,7 @@ test:
     - docker build -t danielrhoades/tomcat-template .
 
     # Start Tomcat container
-    - docker run -d -p 8080:8080 --name simple-jsf_tomcat-template -e WEBAPP_DISTRO_URL=https://github.com/daniel-rhoades/simple-jsf-example/releases/download/v0.1/simple-jsf-example.war danielrhoades/tomcat-template; sleep 60
+    - docker run -d -p 8080:8080 --name simple-jsf_tomcat-template -e WEBAPP_DISTRO_URL=https://github.com/daniel-rhoades/simple-jsf-example/releases/download/v0.1/simple-jsf-example.war danielrhoades/tomcat-template; sleep 10
     - curl --retry 10 --retry-delay 5 -v http://localhost:8080/simple-jsf-example
 
 deployment:
