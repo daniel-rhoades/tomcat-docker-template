@@ -1,5 +1,7 @@
 # tomcat-template
 
+[![Circle CI](https://circleci.com/gh/daniel-rhoades/tomcat-template.svg?style=svg)](https://circleci.com/gh/daniel-rhoades/tomcat-template)
+
 Docker image which has been built by Ansible with the following roles:
 
 * `williamyeh.oracle-java`: Oracle JDK installation;
